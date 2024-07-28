@@ -5,7 +5,7 @@ A Laravel package for logging activity within your application.
 ## Installation
 
 ```bash
-composer require your-vendor/activity-log
+composer require jameskaydev/activity-log
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ composer require your-vendor/activity-log
 To use this package, include the `LogsActivity` trait in any Eloquent model you wish to track.
 
 ```php
-use YourVendor\ActivityLog\Traits\LogsActivity;
+use jameskaydev\ActivityLog\Traits\LogsActivity;
 
 class YourModel extends Model
 {
@@ -28,7 +28,7 @@ This will automatically log `created`, `updated`, and `deleted` events for the m
 You can publish the configuration file using the following command:
 
 ```bash
-php artisan vendor:publish --provider="YourVendor\ActivityLog\ActivityLogServiceProvider" --tag="config"
+php artisan vendor:publish --provider="jameskaydev\ActivityLog\ActivityLogServiceProvider" --tag="config"
 ```
 
 ## Migrations
