@@ -1,0 +1,21 @@
+{
+    "name": "your-vendor/activity-log",
+    "description": "A Laravel package for logging activity",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "YourVendor\\ActivityLog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YourVendor\\ActivityLog\\ActivityLogServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    }
+}
